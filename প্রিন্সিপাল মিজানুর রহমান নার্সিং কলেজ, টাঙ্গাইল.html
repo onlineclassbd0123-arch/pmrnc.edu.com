@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ, টাঙ্গাইল | Principal Mizanur Rahman Nursing College</title>
+    
+    <!-- Google Fonts: Hind Siliguri & Noto Sans Bengali for authentic Bengali typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', '"Noto Sans Bengali"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#0f4c5c',
+                            dark: '#09323d',
+                            light: '#196f85',
+                        },
+                        secondary: {
+                            DEFAULT: '#0077b6',
+                            light: '#0096c7',
+                        },
+                        accent: {
+                            DEFAULT: '#10b981',
+                            dark: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Smooth Animations & Marquee */
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 28s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Hero Gradient Overlay */
+        .hero-pattern {
+            background-color: #0f4c5c;
+            background-image: radial-gradient(circle at 15% 50%, rgba(16, 185, 129, 0.18) 0%, transparent 45%),
+                              radial-gradient(circle at 85% 30%, rgba(0, 119, 182, 0.25) 0%, transparent 50%);
+        }
+
+        /* Print Styles for Admission Slip */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printable-slip, #printable-slip * {
+                visibility: visible;
+            }
+            #printable-slip {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                background: white;
+                padding: 20px;
+                box-shadow: none !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- ==================== 1. TOP BAR ==================== -->
+    <div class="bg-primary-dark text-white text-xs sm:text-sm py-2 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-4 sm:space-x-6">
+                <a href="tel:+8801711000000" class="flex items-center gap-1.5 hover:text-accent transition">
+                    <i class="fa-solid fa-phone-volume text-accent"></i>
+                    <span>হটলাইন: ০১৭১১-০০০০০০, ০১৮১১-০০০০০০</span>
+                </a>
+                <a href="mailto:info@pmrnc-tangail.edu.bd" class="hidden md:flex items-center gap-1.5 hover:text-accent transition">
+                    <i class="fa-solid fa-envelope text-accent"></i>
+                    <span>info@pmrnc-tangail.edu.bd</span>
+                </a>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5 bg-accent/20 text-emerald-300 border border-accent/40 px-2.5 py-0.5 rounded-full text-xs font-medium">
+                    <span class="w-2 h-2 rounded-full bg-accent animate-ping"></span>
+                    ২০২৬-২০২৭ শিক্ষাবর্ষে ভর্তি চলছে
+                </span>
+                <span class="hidden sm:inline text-slate-300">| বিএনএমসি ও স্বাস্থ্য মন্ত্রণালয় অনুমোদিত</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NAVIGATION HEADER ==================== -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- College Logo & Name -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform shrink-0">
+                        <!-- Custom Medical & Nursing SVG Emblem -->
+                        <svg class="w-8 h-8" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 6L54 16V30C54 44.5 44.6 56.8 32 60C19.4 56.8 10 44.5 10 30V16L32 6Z" stroke="white" stroke-width="3" fill="rgba(255,255,255,0.1)"/>
+                            <path d="M28 20H36V28H44V36H36V44H28V36H20V28H28V20Z" fill="#10b981"/>
+                            <path d="M22 48C26 51 38 51 42 48" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-base sm:text-lg lg:text-xl font-bold text-primary leading-tight">
+                            প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ
+                        </h1>
+                        <p class="text-xs sm:text-sm font-medium text-slate-500 flex items-center gap-1">
+                            <i class="fa-solid fa-location-dot text-accent text-xs"></i> টাঙ্গাইল সদর, টাঙ্গাইল
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2">
+                    <a href="#home" class="px-3 py-2 rounded-lg text-sm font-semibold text-primary bg-slate-100 hover:bg-primary hover:text-white transition">হোম</a>
+                    <a href="#about" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-primary transition">আমাদের সম্পর্কে</a>
+                    <a href="#courses" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-primary transition">কোর্সসমূহ</a>
+                    <a href="#facilities" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-primary transition">সুবিধাসমূহ</a>
+                    <a href="#notices" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-primary transition">নোটিশ বোর্ড</a>
+                    <a href="#gallery" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-primary transition">গ্যালারি</a>
+                    <a href="#contact" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-primary transition">যোগাযোগ</a>
+                </nav>
+
+                <!-- CTA & Mobile Menu Button -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <button onclick="openAdmissionModal()" class="bg-accent hover:bg-accent-dark text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shadow-md shadow-emerald-500/20 hover:shadow-lg transition flex items-center gap-1.5 cursor-pointer">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <span>অনলাইন আবেদন</span>
+                    </button>
+                    <button id="mobile-menu-btn" aria-label="মেনু খুলুন" class="lg:hidden p-2.5 rounded-xl bg-slate-100 text-primary hover:bg-slate-200 transition">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-5 space-y-1.5 shadow-xl">
+            <a href="#home" class="mobile-link block px-4 py-2.5 rounded-xl font-semibold text-primary bg-slate-50">হোম</a>
+            <a href="#about" class="mobile-link block px-4 py-2.5 rounded-xl font-semibold text-slate-700 hover:bg-slate-50">আমাদের সম্পর্কে</a>
+            <a href="#courses" class="mobile-link block px-4 py-2.5 rounded-xl font-semibold text-slate-700 hover:bg-slate-50">কোর্সসমূহ</a>
+            <a href="#facilities" class="mobile-link block px-4 py-2.5 rounded-xl font-semibold text-slate-700 hover:bg-slate-50">ফ্যাকাল্টি ও সুবিধা</a>
+            <a href="#notices" class="mobile-link block px-4 py-2.5 rounded-xl font-semibold text-slate-700 hover:bg-slate-50">নোটিশ বোর্ড</a>
+            <a href="#gallery" class="mobile-link block px-4 py-2.5 rounded-xl font-semibold text-slate-700 hover:bg-slate-50">ক্যাম্পাস গ্যালারি</a>
+            <a href="#contact" class="mobile-link block px-4 py-2.5 rounded-xl font-semibold text-slate-700 hover:bg-slate-50">যোগাযোগ</a>
+        </div>
+    </header>
+
+    <!-- ==================== LIVE BREAKING NOTICE TICKER ==================== -->
+    <div class="bg-slate-900 text-white border-b border-slate-800 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex items-center">
+            <div class="bg-accent text-slate-950 font-bold text-xs sm:text-sm px-3 sm:px-4 py-2.5 shrink-0 flex items-center gap-1.5 z-10 shadow-md">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>জরুরি বিজ্ঞপ্তি:</span>
+            </div>
+            <div class="overflow-hidden py-2 w-full">
+                <div class="animate-marquee text-xs sm:text-sm text-slate-200 font-medium">
+                    *** ২০২৬-২০২৭ শিক্ষাবর্ষে ডিপ্লোমা ইন নার্সিং সায়েন্স অ্যান্ড মিডওয়াইফারি, ডিপ্লোমা ইন মিডওয়াইফারি এবং বিএসসি ইন নার্সিং কোর্সে সীমিত সংখ্যক আসনে সরাসরি ও অনলাইনে ভর্তি আবেদন চলছে *** মেধাবী ও দরিদ্র শিক্ষার্থীদের জন্য বিশেষ শিক্ষাবৃত্তির সুযোগ রয়েছে *** বিস্তারিত জানতে কলেজ অফিসে যোগাযোগ করুন অথবা অনলাইনে আবেদন সম্পন্ন করুন ***
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="home" class="hero-pattern text-white relative overflow-hidden">
+        <!-- Decorative SVG Circles -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-emerald-300">
+                        <i class="fa-solid fa-award"></i>
+                        <span>বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল (BNMC) অনুমোদিত</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+                        প্রিন্সিপাল মিজানুর রহমান <br class="hidden sm:inline">
+                        <span class="text-emerald-400">নার্সিং কলেজ, টাঙ্গাইল</span>
+                    </h2>
+
+                    <p class="text-lg sm:text-xl font-semibold text-sky-200">
+                        “মানসম্মত নার্সিং শিক্ষা ও মানবসেবায় অঙ্গীকারবদ্ধ”
+                    </p>
+
+                    <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        আধুনিক ল্যাবরেটরি, অভিজ্ঞ চিকিৎসক ও নার্সিং ফ্যাকাল্টি এবং টাঙ্গাইলের শীর্ষস্থানীয় হাসপাতালসমূহে হাতে-কলমে ক্লিনিক্যাল প্র্যাকটিসের মাধ্যমে আমরা গড়ে তুলছি দক্ষ ও মানবিক স্বাস্থ্যসেবাকর্মী।
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openAdmissionModal()" class="w-full sm:w-auto bg-accent hover:bg-accent-dark text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-950/40 hover:-translate-y-0.5 transition flex items-center justify-center gap-2 text-base cursor-pointer">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>অনলাইনে আবেদন করুন</span>
+                        </button>
+                        <a href="#courses" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-7 py-3.5 rounded-xl transition flex items-center justify-center gap-2 text-base">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>কোর্সসমূহ দেখুন</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Trust Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/15 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-emerald-400">১০০%</div>
+                            <div class="text-xs sm:text-sm text-slate-300">ক্লিনিক্যাল প্রশিক্ষণ</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-emerald-400">০৫+</div>
+                            <div class="text-xs sm:text-sm text-slate-300">আধুনিক ল্যাবরেটরি</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-emerald-400">৯৮%</div>
+                            <div class="text-xs sm:text-sm text-slate-300">বোর্ড পাসের হার</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Card / Illustration -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-5 sm:p-6 rounded-3xl shadow-2xl">
+                        <div class="relative rounded-2xl overflow-hidden bg-slate-800 aspect-[4/3] mb-5">
+                            <img 
+                                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80" 
+                                alt="নার্সিং শিক্ষা ও ল্যাব প্র্যাকটিস" 
+                                onerror="this.onerror=null;this.src='https://placehold.co/800x600/0f4c5c/ffffff?text=Nursing+Education+Tangail';"
+                                class="w-full h-full object-cover"
+                            >
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
+                                <div class="text-white">
+                                    <span class="bg-accent text-slate-950 text-xs font-bold px-2.5 py-1 rounded-md">ক্যাম্পাস ও ল্যাব</span>
+                                    <p class="font-semibold text-base mt-1.5">আধুনিক নার্সিং স্কিল ল্যাবে শিক্ষার্থীদের ব্যবহারিক প্রশিক্ষণ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Info Box -->
+                        <div class="bg-white text-slate-800 rounded-2xl p-4 flex items-center justify-between gap-4 shadow-md">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-xl bg-emerald-100 text-accent-dark flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-medium">ভর্তি সংক্রান্ত যেকোনো তথ্যে</p>
+                                    <p class="text-sm sm:text-base font-bold text-primary">০১৭১১-০০০০০০</p>
+                                </div>
+                            </div>
+                            <a href="#contact" class="bg-primary hover:bg-primary-dark text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-xl transition shrink-0">
+                                যোগাযোগ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. NOTICE BOARD & ADMISSION HIGHLIGHTS ==================== -->
+    <section id="notices" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Interactive Notice Board (7 Cols) -->
+                <div class="lg:col-span-7 bg-slate-50 border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-sm">
+                    <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-200">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center">
+                                <i class="fa-solid fa-clipboard-list text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">নোটিশ বোর্ড</h3>
+                                <p class="text-xs text-slate-500">কলেজের সর্বশেষ বিজ্ঞপ্তি ও ঘোষণা</p>
+                            </div>
+                        </div>
+
+                        <!-- Filter Buttons -->
+                        <div class="flex flex-wrap gap-1.5" id="notice-filters">
+                            <button data-filter="all" class="notice-filter-btn active bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition cursor-pointer">সব নোটিশ</button>
+                            <button data-filter="admission" class="notice-filter-btn bg-white text-slate-600 hover:bg-slate-200 border border-slate-200 text-xs font-semibold px-3 py-1.5 rounded-lg transition cursor-pointer">ভর্তি</button>
+                            <button data-filter="exam" class="notice-filter-btn bg-white text-slate-600 hover:bg-slate-200 border border-slate-200 text-xs font-semibold px-3 py-1.5 rounded-lg transition cursor-pointer">পরীক্ষা</button>
+                            <button data-filter="result" class="notice-filter-btn bg-white text-slate-600 hover:bg-slate-200 border border-slate-200 text-xs font-semibold px-3 py-1.5 rounded-lg transition cursor-pointer">ফলাফল</button>
+                        </div>
+                    </div>
+
+                    <!-- Notice List Container -->
+                    <div id="notice-list" class="divide-y divide-slate-200 mt-2">
+                        <!-- Notices dynamically rendered via JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Admission Eligibility & Quick Box (5 Cols) -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-primary to-secondary text-white rounded-2xl p-6 sm:p-7 shadow-lg">
+                    <div class="flex items-center gap-2 text-emerald-300 text-sm font-semibold mb-2">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>ভর্তি তথ্য ২০২৬-২০২৭</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">ভর্তির ন্যূনতম যোগ্যতা ও শর্তাবলি</h3>
+                    
+                    <ul class="space-y-3.5 text-sm text-slate-100">
+                        <li class="flex items-start gap-3 bg-white/10 p-3 rounded-xl">
+                            <i class="fa-solid fa-check-double text-emerald-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white block">ডিপ্লোমা ইন নার্সিং / মিডওয়াইফারি:</strong>
+                                যেকোনো বিভাগ থেকে এসএসসি ও এইচএসসি পরীক্ষায় ন্যূনতম মোট জিপিএ ৬.০০ থাকতে হবে (কোনো পরীক্ষায় ২.৫০ এর নিচে নয়)।
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 bg-white/10 p-3 rounded-xl">
+                            <i class="fa-solid fa-check-double text-emerald-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white block">বিএসসি ইন নার্সিং (৪ বছর):</strong>
+                                বিজ্ঞান বিভাগ (জীববিজ্ঞানসহ) থেকে এসএসসি ও এইচএসসি পরীক্ষায় মোট জিপিএ ৭.০০ থাকতে হবে (কোনো পরীক্ষায় ৩.০০ এর নিচে নয়)।
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 bg-white/10 p-3 rounded-xl">
+                            <i class="fa-solid fa-check-double text-emerald-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white block">বিএনএমসি ভর্তি পরীক্ষা:</strong>
+                                বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল (BNMC) কর্তৃক গৃহীত কেন্দ্রীয় ভর্তি পরীক্ষায় উত্তীর্ণ হতে হবে।
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt-6 pt-5 border-t border-white/20 flex flex-col sm:flex-row gap-3">
+                        <button onclick="openAdmissionModal()" class="w-full bg-accent hover:bg-accent-dark text-white font-bold py-3 px-5 rounded-xl shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>এখনই আবেদন ফরম পূরণ করুন</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. ABOUT US & PRINCIPAL'S MESSAGE ==================== -->
+    <section id="about" class="py-16 sm:py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-accent-dark font-bold text-sm uppercase tracking-wider bg-emerald-100 px-3.5 py-1 rounded-full">আমাদের পরিচিতি</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ</h2>
+                <p class="text-slate-600 mt-3 text-base">টাঙ্গাইল জেলার স্বাস্থ্যশিক্ষা ও দক্ষ নার্স তৈরির একটি আধুনিক ও বিশ্বস্ত প্রতিষ্ঠান</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <!-- College Overview & Mission/Vision -->
+                <div class="lg:col-span-6 space-y-6">
+                    <h3 class="text-2xl font-bold text-slate-800 leading-snug">
+                        আধুনিক চিকিৎসা বিজ্ঞানের সাথে মানবিক মূল্যবোধের সমন্বয়
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong>প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ, টাঙ্গাইল</strong> গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয় এবং বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল (BNMC)-এর কারিকুলাম ও নীতিমালা অনুযায়ী পরিচালিত একটি স্বনামধন্য নার্সিং শিক্ষাপ্রতিষ্ঠান।
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        আমাদের মূল লক্ষ্য হলো টাঙ্গাইলসহ সমগ্র বাংলাদেশের শিক্ষার্থীদের আন্তর্জাতিক মানের নার্সিং শিক্ষায় শিক্ষিত করে তোলা, যাতে তারা দেশ ও বিদেশের হাসপাতালগুলোতে আত্মবিশ্বাসের সাথে মানবসেবায় নিয়োজিত হতে পারে।
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-sky-100 text-secondary flex items-center justify-center text-lg mb-3">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <h4 class="font-bold text-primary text-lg mb-1">আমাদের লক্ষ্য (Mission)</h4>
+                            <p class="text-sm text-slate-600">নৈতিকতা, শৃঙ্খলা ও হাতে-কলমে ক্লিনিক্যাল দক্ষতাসম্পন্ন আদর্শ নার্স ও মিডওয়াইফ তৈরি করা।</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-accent-dark flex items-center justify-center text-lg mb-3">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <h4 class="font-bold text-primary text-lg mb-1">আমাদের ভিশন (Vision)</h4>
+                            <p class="text-sm text-slate-600">দেশের স্বাস্থ্যসেবা খাতের মানোন্নয়নে একটি শীর্ষস্থানীয় নার্সিং ও গবেষণা কেন্দ্র হিসেবে প্রতিষ্ঠা লাভ।</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Principal's Message Card -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xl relative">
+                        <div class="absolute top-6 right-8 text-slate-100 text-6xl pointer-events-none">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-6 relative z-10">
+                            <div class="w-24 h-24 rounded-2xl overflow-hidden border-4 border-emerald-50 shadow-md shrink-0 bg-primary flex items-center justify-center text-white">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=300&q=80" 
+                                    alt="অধ্যক্ষ মহোদয়" 
+                                    onerror="this.onerror=null;this.src='https://placehold.co/300x300/0f4c5c/ffffff?text=Principal';"
+                                    class="w-full h-full object-cover"
+                                >
+                            </div>
+                            <div class="text-center sm:text-left">
+                                <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">অধ্যক্ষের বাণী</span>
+                                <h4 class="text-xl font-bold text-slate-900 mt-2">অধ্যক্ষ, প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ</h4>
+                                <p class="text-sm text-slate-500">টাঙ্গাইল সদর, টাঙ্গাইল</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 text-slate-600 text-sm sm:text-base leading-relaxed relative z-10">
+                            <p>
+                                “নার্সিং কেবল একটি পেশা নয়, এটি আর্তমানবতার সেবায় নিজেকে উৎসর্গ করার এক মহান ব্রত। বর্তমান বিশ্বে দক্ষ নার্সদের চাহিদা দিন দিন বৃদ্ধি পাচ্ছে।”
+                            </p>
+                            <p>
+                                “প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজে আমরা প্রতিটি শিক্ষার্থীর তাত্ত্বিক জ্ঞানের পাশাপাশি ব্যবহারিক ও ক্লিনিক্যাল দক্ষতা বৃদ্ধিতে সর্বোচ্চ গুরুত্ব দিয়ে থাকি। নিরাপদ ও মনোরম ক্যাম্পাস, সমৃদ্ধ ল্যাব এবং অভিজ্ঞ শিক্ষকমণ্ডলীর তত্ত্বাবধানে শিক্ষার্থীরা নিজেদের উজ্জ্বল ভবিষ্যৎ গড়ে তুলতে সক্ষম হবে—এই আমাদের প্রত্যাশা।”
+                            </p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm text-slate-500">
+                            <span class="font-semibold text-primary">— অধ্যক্ষ কার্যালয়</span>
+                            <span>প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. COURSES OFFERED ==================== -->
+    <section id="courses" class="py-16 sm:py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-secondary font-bold text-sm uppercase tracking-wider bg-sky-100 px-3.5 py-1 rounded-full">একাডেমিক প্রোগ্রাম</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">আমাদের পরিচালিত কোর্সসমূহ</h2>
+                <p class="text-slate-600 mt-3 text-base">বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল (BNMC) অনুমোদিত মেয়াদভিত্তিক কোর্সসমূহ</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Course 1: Diploma in Nursing Science & Midwifery -->
+                <div class="bg-slate-50 rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="bg-gradient-to-r from-primary to-primary-light p-6 text-white relative">
+                            <div class="flex justify-between items-start">
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">মেয়াদ: ০৩ বছর</span>
+                                <div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mt-4 leading-snug">
+                                ডিপ্লোমা ইন নার্সিং সায়েন্স অ্যান্ড মিডওয়াইফারি
+                            </h3>
+                            <p class="text-xs text-sky-200 mt-1">Diploma in Nursing Science & Midwifery</p>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between text-sm py-2 border-b border-slate-200">
+                                <span class="text-slate-500"><i class="fa-regular fa-clock text-primary mr-1.5"></i>কোর্সের মেয়াদ:</span>
+                                <span class="font-bold text-slate-800">৩ বছর (৬ মাস ইন্টার্নশিপসহ)</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm py-2 border-b border-slate-200">
+                                <span class="text-slate-500"><i class="fa-solid fa-users text-primary mr-1.5"></i>আসন সংখ্যা:</span>
+                                <span class="font-bold text-accent-dark">৫০টি আসন (ছেলে ও মেয়ে)</span>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p class="font-bold text-slate-800">ভর্তির যোগ্যতা:</p>
+                                <p>• যেকোনো বিভাগ থেকে এসএসসি ও এইচএসসি পরীক্ষায় মোট জিপিএ কমপক্ষে ৬.০০ থাকতে হবে।</p>
+                                <p>• কোনো পরীক্ষায় জিপিএ ২.৫০-এর নিচে গ্রহণযোগ্য নয়।</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="openAdmissionModal('ডিপ্লোমা ইন নার্সিং সায়েন্স অ্যান্ড মিডওয়াইফারি')" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer group-hover:bg-accent">
+                            <span>বিস্তারিত ও আবেদন</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 2: Diploma in Midwifery -->
+                <div class="bg-slate-50 rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="bg-gradient-to-r from-secondary to-secondary-light p-6 text-white relative">
+                            <div class="flex justify-between items-start">
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">মেয়াদ: ০৩ বছর</span>
+                                <div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-baby-carriage"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mt-4 leading-snug">
+                                ডিপ্লোমা ইন মিডওয়াইফারি
+                            </h3>
+                            <p class="text-xs text-sky-100 mt-1">Diploma in Midwifery (শুধুমাত্র ছাত্রীদের জন্য)</p>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between text-sm py-2 border-b border-slate-200">
+                                <span class="text-slate-500"><i class="fa-regular fa-clock text-secondary mr-1.5"></i>কোর্সের মেয়াদ:</span>
+                                <span class="font-bold text-slate-800">৩ বছর (৬ মাস ইন্টার্নশিপসহ)</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm py-2 border-b border-slate-200">
+                                <span class="text-slate-500"><i class="fa-solid fa-users text-secondary mr-1.5"></i>আসন সংখ্যা:</span>
+                                <span class="font-bold text-accent-dark">৪০টি আসন (শুধুমাত্র ছাত্রী)</span>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p class="font-bold text-slate-800">ভর্তির যোগ্যতা:</p>
+                                <p>• যেকোনো বিভাগ থেকে এসএসসি ও এইচএসসি পরীক্ষায় মোট জিপিএ কমপক্ষে ৬.০০ থাকতে হবে।</p>
+                                <p>• মাতৃস্বাস্থ্য ও প্রসূতি সেবায় ক্যারিয়ার গড়তে আগ্রহী ছাত্রীদের জন্য বিশেষায়িত কোর্স।</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="openAdmissionModal('ডিপ্লোমা ইন মিডওয়াইফারি')" class="w-full bg-secondary hover:bg-primary text-white font-bold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer group-hover:bg-accent">
+                            <span>বিস্তারিত ও আবেদন</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 3: B.Sc. in Nursing -->
+                <div class="bg-slate-50 rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="bg-gradient-to-r from-emerald-700 to-accent-dark p-6 text-white relative">
+                            <div class="flex justify-between items-start">
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">মেয়াদ: ০৪ বছর</span>
+                                <div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-stethoscope"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mt-4 leading-snug">
+                                বিএসসি ইন নার্সিং (বেসিক)
+                            </h3>
+                            <p class="text-xs text-emerald-100 mt-1">Bachelor of Science in Nursing (B.Sc.)</p>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between text-sm py-2 border-b border-slate-200">
+                                <span class="text-slate-500"><i class="fa-regular fa-clock text-accent-dark mr-1.5"></i>কোর্সের মেয়াদ:</span>
+                                <span class="font-bold text-slate-800">৪ বছর (৬ মাস ইন্টার্নশিপসহ)</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm py-2 border-b border-slate-200">
+                                <span class="text-slate-500"><i class="fa-solid fa-users text-accent-dark mr-1.5"></i>আসন সংখ্যা:</span>
+                                <span class="font-bold text-accent-dark">৪০টি আসন (ছেলে ও মেয়ে)</span>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p class="font-bold text-slate-800">ভর্তির যোগ্যতা:</p>
+                                <p>• বিজ্ঞান বিভাগ (জীববিজ্ঞানসহ) থেকে এসএসসি ও এইচএসসি পরীক্ষায় মোট জিপিএ ৭.০০ থাকতে হবে।</p>
+                                <p>• কোনো পরীক্ষায় জিপিএ ৩.০০-এর নিচে গ্রহণযোগ্য নয়।</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="openAdmissionModal('বিএসসি ইন নার্সিং (৪ বছর)')" class="w-full bg-emerald-700 hover:bg-primary text-white font-bold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer group-hover:bg-primary">
+                            <span>বিস্তারিত ও আবেদন</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. FACILITIES & LABS ==================== -->
+    <section id="facilities" class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-accent-dark font-bold text-sm uppercase tracking-wider bg-emerald-100 px-3.5 py-1 rounded-full">ক্যাম্পাস সুবিধাসমূহ</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">আধুনিক ল্যাবরেটরি ও শিক্ষার্থী সুবিধা</h2>
+                <p class="text-slate-600 mt-3 text-base">মানসম্মত শিক্ষার পরিবেশ নিশ্চিত করতে আমাদের রয়েছে অত্যাধুনিক সব সুযোগ-সুবিধা</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Facility 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-secondary flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-primary mb-2">অ্যানাটমি ও ফিজিওলজি ল্যাব</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">মানবদেহের অঙ্গপ্রত্যঙ্গের থ্রিডি মডেল, চার্ট এবং আধুনিক যন্ত্রপাতি সমৃদ্ধ সুসজ্জিত অ্যানাটমি ল্যাব।</p>
+                </div>
+
+                <!-- Facility 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-accent-dark flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-bed-pulse"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-primary mb-2">ফান্ডামেন্টালস অব নার্সিং ল্যাব</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">হাসপাতালের ওয়ার্ডের আদলে তৈরি স্কিল ল্যাব, যেখানে ডামি রোগীর মাধ্যমে নার্সিং কেয়ার অনুশীলন করা হয়।</p>
+                </div>
+
+                <!-- Facility 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-primary mb-2">ক্লিনিক্যাল প্র্যাকটিস সুবিধা</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">টাঙ্গাইল জেনারেল হাসপাতাল ও স্বনামধন্য ক্লিনিকগুলোতে সরাসরি রোগীদের সেবা প্রদানের বাস্তব প্রশিক্ষণ।</p>
+                </div>
+
+                <!-- Facility 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-book-medical"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-primary mb-2">সমৃদ্ধ লাইব্রেরি ও ই-বুক</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">দেশি-বিদেশি নার্সিং টেক্সটবুক, মেডিকেল জার্নাল ও শান্ত পরিবেশে পড়াশোনার জন্য প্রশস্ত রিডিং রুম।</p>
+                </div>
+
+                <!-- Facility 5 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-primary mb-2">আধুনিক কম্পিউটার ল্যাব</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">হাই-স্পিড ইন্টারনেট ও মাল্টিমিডিয়া সুবিধাসম্পন্ন কম্পিউটার ল্যাব, যা শিক্ষার্থীদের ডিজিটাল দক্ষতা বাড়ায়।</p>
+                </div>
+
+                <!-- Facility 6 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-house-chimney-user"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-primary mb-2">নিরাপদ ছাত্রীনিবাস (হোস্টেল)</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">দূরবর্তী ছাত্রীদের জন্য সার্বক্ষণিক নিরাপত্তা, স্বাস্থ্যসম্মত খাবার ও তত্ত্বাবধানের ব্যবস্থাসহ আবাসিক হোস্টেল।</p>
+                </div>
+
+                <!-- Facility 7 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-bus"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-primary mb-2">পরিবহন সুবিধা</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">ক্যাম্পাস থেকে হাসপাতালে ক্লিনিক্যাল ডিউটিতে যাতায়াতের জন্য কলেজের নিজস্ব পরিবহন ব্যবস্থা।</p>
+                </div>
+
+                <!-- Facility 8 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-primary mb-2">অভিজ্ঞ ফ্যাকাল্টি ও চিকিৎসক</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">বিএসসি ও এমএসসি ডিগ্রিধারী অভিজ্ঞ নার্সিং শিক্ষক এবং বিশেষজ্ঞ চিকিৎসকদের নিয়মিত ক্লাস ও গাইডলাইন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 8. GALLERY & CAMPUS LIFE ==================== -->
+    <section id="gallery" class="py-16 sm:py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <span class="text-secondary font-bold text-sm uppercase tracking-wider bg-sky-100 px-3.5 py-1 rounded-full">ফটো গ্যালারি</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">ক্যাম্পাস ও একাডেমিক কার্যক্রম</h2>
+                </div>
+                
+                <!-- Gallery Filter Tabs -->
+                <div class="flex flex-wrap gap-2">
+                    <button data-gallery="all" class="gallery-tab-btn bg-primary text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-xl transition cursor-pointer">সব ছবি</button>
+                    <button data-gallery="lab" class="gallery-tab-btn bg-slate-100 text-slate-700 hover:bg-slate-200 text-xs sm:text-sm font-semibold px-4 py-2 rounded-xl transition cursor-pointer">ল্যাব ও প্র্যাকটিস</button>
+                    <button data-gallery="campus" class="gallery-tab-btn bg-slate-100 text-slate-700 hover:bg-slate-200 text-xs sm:text-sm font-semibold px-4 py-2 rounded-xl transition cursor-pointer">ক্যাম্পাস ও ক্লাসরুম</button>
+                    <button data-gallery="event" class="gallery-tab-btn bg-slate-100 text-slate-700 hover:bg-slate-200 text-xs sm:text-sm font-semibold px-4 py-2 rounded-xl transition cursor-pointer">সেমিনার ও অনুষ্ঠান</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[4/3]" data-category="lab">
+                    <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://placehold.co/800x600/0f4c5c/ffffff?text=Nursing+Lab+Practice';" alt="নার্সিং ল্যাব প্র্যাকটিস" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-xs font-semibold text-emerald-300">ল্যাব প্র্যাকটিস</span>
+                            <h4 class="text-white font-bold text-base">ফান্ডামেন্টালস অব নার্সিং স্কিল ল্যাব</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[4/3]" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://placehold.co/800x600/0077b6/ffffff?text=Modern+Classroom';" alt="আধুনিক ক্লাসরুম" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-xs font-semibold text-sky-300">একাডেমিক ভবন</span>
+                            <h4 class="text-white font-bold text-base">মাল্টিমিডিয়া সমৃদ্ধ আধুনিক শ্রেণিকক্ষ</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[4/3]" data-category="lab">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://placehold.co/800x600/10b981/ffffff?text=Clinical+Training';" alt="ক্লিনিক্যাল প্রশিক্ষণ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-xs font-semibold text-emerald-300">ক্লিনিক্যাল ডিউটি</span>
+                            <h4 class="text-white font-bold text-base">হাসপাতালে হাতে-কলমে রোগী সেবার প্রশিক্ষণ</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[4/3]" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://placehold.co/800x600/0f4c5c/ffffff?text=College+Library';" alt="কলেজ লাইব্রেরি" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-xs font-semibold text-sky-300">লাইব্রেরি</span>
+                            <h4 class="text-white font-bold text-base">মেডিকেল ও নার্সিং বই সমৃদ্ধ লাইব্রেরি</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[4/3]" data-category="event">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://placehold.co/800x600/0077b6/ffffff?text=Nursing+Seminar';" alt="স্বাস্থ্য সেমিনার" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-xs font-semibold text-amber-300">সেমিনার ও কর্মশালা</span>
+                            <h4 class="text-white font-bold text-base">আন্তর্জাতিক নার্স দিবস ও স্বাস্থ্য সচেতনতা সেমিনার</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[4/3]" data-category="event">
+                    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null;this.src='https://placehold.co/800x600/10b981/ffffff?text=Capping+Ceremony';" alt="ক্যাপিং সিরিমনি" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-xs font-semibold text-amber-300">শিক্ষার্থী কার্যক্রম</span>
+                            <h4 class="text-white font-bold text-base">নবীনবরণ ও শপথ গ্রহণ অনুষ্ঠান</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 9. CONTACT & LOCATION ==================== -->
+    <section id="contact" class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-accent-dark font-bold text-sm uppercase tracking-wider bg-emerald-100 px-3.5 py-1 rounded-full">যোগাযোগ করুন</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">আমাদের ঠিকানা ও তথ্য কেন্দ্র</h2>
+                <p class="text-slate-600 mt-3 text-base">ভর্তি বা যেকোনো একাডেমিক তথ্যের জন্য সরাসরি ক্যাম্পাসে আসুন অথবা নিচের ফরমে বার্তা পাঠান</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Contact Details & Map Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">ক্যাম্পাস ঠিকানা</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ, টাঙ্গাইল সদর, টাঙ্গাইল-১৯০০, ঢাকা বিভাগ, বাংলাদেশ।</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-emerald-100 text-accent-dark flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">ভর্তি হটলাইন নম্বর</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">০১৭১১-০০০০০০, ০১৮১১-০০০০০০</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-sky-100 text-secondary flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">ইমেইল ঠিকানা</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">info@pmrnc-tangail.edu.bd<br>admission@pmrnc-tangail.edu.bd</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">অফিস সময়সূচি</h4>
+                                <p class="text-sm text-slate-600 mt-0.5">শনিবার – বৃহস্পতিবার: সকাল ৮:৩০ – বিকাল ৫:০০ পর্যন্ত (শুক্রবার সাপ্তাহিক ছুটি)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Tangail Map -->
+                    <div class="bg-white p-2 rounded-2xl border border-slate-200 shadow-sm overflow-hidden h-56">
+                        <iframe 
+                            title="টাঙ্গাইল লোকেশন ম্যাপ"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=89.8950%2C24.2350%2C89.9350%2C24.2650&amp;layer=mapnik&amp;marker=24.2513%2C89.9167" 
+                            class="w-full h-full rounded-xl border-0"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Interactive Inquiry Form -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="text-2xl font-bold text-primary mb-2">আপনার জিজ্ঞাসা পাঠান</h3>
+                    <p class="text-sm text-slate-500 mb-6">নিচের ফরমটি পূরণ করে পাঠালে আমাদের ভর্তি প্রতিনিধি দ্রুত আপনার সাথে যোগাযোগ করবেন।</p>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1.5">আপনার নাম <span class="text-rose-500">*</span></label>
+                                <input type="text" required placeholder="সম্পূর্ণ নাম লিখুন" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1.5">মোবাইল নম্বর <span class="text-rose-500">*</span></label>
+                                <input type="tel" required placeholder="০১XXXXXXXXX" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1.5">বিষয় নির্বাচন করুন</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm bg-white transition">
+                                <option>ভর্তি সংক্রান্ত তথ্য ও খরচ</option>
+                                <option>ডিপ্লোমা ইন নার্সিং সায়েন্স অ্যান্ড মিডওয়াইফারি</option>
+                                <option>ডিপ্লোমা ইন মিডওয়াইফারি</option>
+                                <option>বিএসসি ইন নার্সিং (৪ বছর)</option>
+                                <option>ছাত্রীনিবাস (হোস্টেল) সুবিধা</option>
+                                <option>অন্যান্য জিজ্ঞাসা</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1.5">আপনার বার্তা <span class="text-rose-500">*</span></label>
+                            <textarea rows="4" required placeholder="আপনার প্রশ্ন বা মতামত বিস্তারিত লিখুন..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>বার্তা পাঠান</span>
+                        </button>
+                    </form>
+
+                    <!-- Contact Form Feedback Message Box -->
+                    <div id="contact-success" class="hidden mt-5 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-xl text-accent-dark"></i>
+                        <div>
+                            <strong class="block">ধন্যবাদ! আপনার বার্তা সফলভাবে পাঠানো হয়েছে।</strong>
+                            <span>আমাদের অফিস প্রতিনিধি শীঘ্রই আপনার মোবাইল নম্বরে যোগাযোগ করবেন।</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 10. FOOTER ==================== -->
+    <footer class="bg-slate-900 text-slate-300 pt-14 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-slate-800">
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-accent flex items-center justify-center text-slate-950 font-bold text-xl">
+                            <i class="fa-solid fa-staff-snake"></i>
+                        </div>
+                        <h3 class="text-white font-bold text-lg leading-tight">
+                            প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ
+                        </h3>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        মানসম্মত নার্সিং শিক্ষা ও মানবসেবায় অঙ্গীকারবদ্ধ। টাঙ্গাইল জেলার অন্যতম আধুনিক ও সুশৃঙ্খল নার্সিং শিক্ষাপ্রতিষ্ঠান।
+                    </p>
+                    <div class="flex items-center gap-3 pt-1">
+                        <a href="#contact" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-accent hover:text-slate-950 flex items-center justify-center transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#contact" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-accent hover:text-slate-950 flex items-center justify-center transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="tel:+8801711000000" aria-label="Phone" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-accent hover:text-slate-950 flex items-center justify-center transition">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">দ্রুত লিংকসমূহ</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-accent transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent"></i> হোম পেজ</a></li>
+                        <li><a href="#about" class="hover:text-accent transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent"></i> আমাদের সম্পর্কে</a></li>
+                        <li><a href="#courses" class="hover:text-accent transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent"></i> কোর্সসমূহ</a></li>
+                        <li><a href="#notices" class="hover:text-accent transition flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs text-accent"></i> নোটিশ বোর্ড</a></li>
+                        <li><button onclick="openAdmissionModal()" class="hover:text-accent transition flex items-center gap-2 cursor-pointer"><i class="fa-solid fa-angle-right text-xs text-accent"></i> অনলাইন ভর্তি আবেদন</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Important Nursing Links -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">গুরুত্বপূর্ণ সরকারি লিংক</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li>
+                            <a href="http://www.bnmc.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-accent"></i>
+                                <span>বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল (BNMC)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dgnm.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-accent"></i>
+                                <span>নার্সিং ও মিডওয়াইফারি অধিদপ্তর (DGNM)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dghs.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-accent"></i>
+                                <span>স্বাস্থ্য অধিদপ্তর (DGHS)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.mohfw.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-accent"></i>
+                                <span>স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">যোগাযোগ</h4>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-accent mt-1"></i>
+                            <span>টাঙ্গাইল সদর, টাঙ্গাইল-১৯০০, ঢাকা বিভাগ, বাংলাদেশ</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-accent"></i>
+                            <span>০১৭১১-০০০০০০, ০১৮১১-০০০০০০</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-envelope text-accent"></i>
+                            <span>info@pmrnc-tangail.edu.bd</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-3">
+                <p>© ২০২৬ প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ, টাঙ্গাইল। সর্বস্বত্ব সংরক্ষিত।</p>
+                <p>শিক্ষা ও মানবসেবায় নিবেদিত প্রতিষ্ঠান</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL 1: NOTICE DETAILS MODAL ==================== -->
+    <div id="notice-modal" class="fixed inset-0 z-50 hidden bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-slate-200 relative animate-[fadeIn_0.2s_ease-out]">
+            <button onclick="closeNoticeModal()" aria-label="বন্ধ করুন" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-rose-100 text-slate-600 hover:text-rose-600 flex items-center justify-center transition cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center gap-2 mb-3">
+                <span id="modal-notice-badge" class="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary">ভর্তি বিজ্ঞপ্তি</span>
+                <span id="modal-notice-date" class="text-xs text-slate-500"><i class="fa-regular fa-calendar mr-1"></i>১০ নভেম্বর ২০২৬</span>
+            </div>
+
+            <h3 id="modal-notice-title" class="text-xl font-bold text-slate-900 mb-4 leading-snug">
+                নোটিশের শিরোনাম
+            </h3>
+
+            <div id="modal-notice-body" class="text-sm text-slate-600 space-y-3 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                নোটিশের বিস্তারিত বিবরণ...
+            </div>
+
+            <div class="mt-6 flex justify-end gap-3">
+                <button onclick="closeNoticeModal()" class="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition cursor-pointer">বন্ধ করুন</button>
+                <button onclick="closeNoticeModal(); openAdmissionModal();" class="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-dark text-white font-bold text-sm transition cursor-pointer">অনলাইন আবেদন করুন</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL 2: ONLINE ADMISSION FORM & PRINTABLE SLIP ==================== -->
+    <div id="admission-modal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm overflow-y-auto p-4">
+        <div class="min-h-full flex items-center justify-center">
+            <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative my-8">
+                
+                <!-- Close Button -->
+                <button onclick="closeAdmissionModal()" aria-label="বন্ধ করুন" class="no-print absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-rose-100 text-slate-600 hover:text-rose-600 flex items-center justify-center transition cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <!-- STEP 1: APPLICATION FORM -->
+                <div id="admission-form-container">
+                    <div class="border-b border-slate-200 pb-4 mb-6">
+                        <span class="bg-emerald-100 text-accent-dark text-xs font-bold px-3 py-1 rounded-full">অনলাইন ভর্তি আবেদন ফরম</span>
+                        <h3 class="text-2xl font-bold text-primary mt-2">প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ, টাঙ্গাইল</h3>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-1">সঠিক তথ্য দিয়ে নিচের ফরমটি পূরণ করুন এবং আপনার আবেদন স্লিপ সংগ্রহ করুন।</p>
+                    </div>
+
+                    <form id="online-admission-form" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">শিক্ষার্থীর নাম (বাংলায়/ইংরেজিতে) <span class="text-rose-500">*</span></label>
+                                <input type="text" id="app-name" required placeholder="যেমন: মোছাঃ তানজিলা আক্তার" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">পছন্দের কোর্স নির্বাচন করুন <span class="text-rose-500">*</span></label>
+                                <select id="app-course" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm bg-white">
+                                    <option value="ডিপ্লোমা ইন নার্সিং সায়েন্স অ্যান্ড মিডওয়াইফারি">ডিপ্লোমা ইন নার্সিং সায়েন্স অ্যান্ড মিডওয়াইফারি (৩ বছর)</option>
+                                    <option value="ডিপ্লোমা ইন মিডওয়াইফারি">ডিপ্লোমা ইন মিডওয়াইফারি (৩ বছর)</option>
+                                    <option value="বিএসসি ইন নার্সিং (৪ বছর)">বিএসসি ইন নার্সিং (৪ বছর)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">পিতার নাম <span class="text-rose-500">*</span></label>
+                                <input type="text" id="app-father" required placeholder="পিতার সম্পূর্ণ নাম" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">মাতার নাম <span class="text-rose-500">*</span></label>
+                                <input type="text" id="app-mother" required placeholder="মাতার সম্পূর্ণ নাম" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">মোবাইল নম্বর <span class="text-rose-500">*</span></label>
+                                <input type="tel" id="app-phone" required placeholder="০১XXXXXXXXX" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">এসএসসি জিপিএ (SSC GPA) <span class="text-rose-500">*</span></label>
+                                <input type="number" step="0.01" min="2.00" max="5.00" id="app-ssc" required placeholder="যেমন: 4.50" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">এইচএসসি জিপিএ (HSC GPA) <span class="text-rose-500">*</span></label>
+                                <input type="number" step="0.01" min="2.00" max="5.00" id="app-hsc" required placeholder="যেমন: 4.75" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">বর্তমান ও স্থায়ী ঠিকানা <span class="text-rose-500">*</span></label>
+                            <textarea id="app-address" rows="2" required placeholder="গ্রাম/মহল্লা, ডাকঘর, উপজেলা, জেলা (যেমন: টাঙ্গাইল সদর, টাঙ্গাইল)" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm"></textarea>
+                        </div>
+
+                        <div id="form-error-msg" class="hidden p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-medium"></div>
+
+                        <div class="pt-2 flex flex-col sm:flex-row justify-end gap-3">
+                            <button type="button" onclick="closeAdmissionModal()" class="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition cursor-pointer">বাতিল করুন</button>
+                            <button type="submit" class="px-7 py-3 rounded-xl bg-accent hover:bg-accent-dark text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>আবেদন জমা দিন ও স্লিপ দেখুন</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- STEP 2: PRINTABLE ADMISSION SLIP PREVIEW -->
+                <div id="admission-slip-container" class="hidden">
+                    <div id="printable-slip" class="border-2 border-primary/30 rounded-2xl p-5 sm:p-6 bg-white">
+                        <!-- Slip Header -->
+                        <div class="text-center border-b-2 border-slate-200 pb-4 mb-5">
+                            <div class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-2">প্রাথমিক ভর্তি আবেদন স্লিপ</div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-primary">প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ, টাঙ্গাইল</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">টাঙ্গাইল সদর, টাঙ্গাইল | হটলাইন: ০১৭১১-০০০০০০ | ওয়েবসাইট: pmrnc-tangail.edu.bd</p>
+                        </div>
+
+                        <!-- Tracking ID & Date -->
+                        <div class="flex flex-wrap justify-between items-center bg-slate-100 px-4 py-2.5 rounded-xl text-xs sm:text-sm mb-5">
+                            <div>আবেদন আইডি: <strong id="slip-id" class="text-primary font-mono text-base">PMRNC-2026-0000</strong></div>
+                            <div>তারিখ: <strong id="slip-date">১৩ নভেম্বর ২০২৬</strong></div>
+                        </div>
+
+                        <!-- Applicant Details Table -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="text-xs text-slate-500 block">শিক্ষার্থীর নাম</span>
+                                <strong id="slip-name" class="text-slate-900"></strong>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="text-xs text-slate-500 block">পছন্দের কোর্স</span>
+                                <strong id="slip-course" class="text-primary"></strong>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="text-xs text-slate-500 block">পিতার নাম</span>
+                                <strong id="slip-father" class="text-slate-900"></strong>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="text-xs text-slate-500 block">মাতার নাম</span>
+                                <strong id="slip-mother" class="text-slate-900"></strong>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="text-xs text-slate-500 block">মোবাইল নম্বর</span>
+                                <strong id="slip-phone" class="text-slate-900"></strong>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="text-xs text-slate-500 block">শিক্ষাগত যোগ্যতা (জিপিএ)</span>
+                                <strong id="slip-gpa" class="text-accent-dark"></strong>
+                            </div>
+                            <div class="sm:col-span-2 p-3 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="text-xs text-slate-500 block">ঠিকানা</span>
+                                <strong id="slip-address" class="text-slate-900"></strong>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 leading-relaxed">
+                            <strong>নির্দেশনা:</strong> এই স্লিপটি প্রিন্ট অথবা সংরক্ষণ করে এসএসসি ও এইচএসসি পরীক্ষার মূল মার্কশিট, প্রশংসাপত্র ও ৪ কপি পাসপোর্ট সাইজের ছবিসহ কলেজ অফিসে উপস্থিত হয়ে চূড়ান্ত ভর্তি কার্যক্রম সম্পন্ন করুন।
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons (No Print) -->
+                    <div class="no-print mt-6 flex flex-wrap justify-between items-center gap-3">
+                        <button onclick="resetAdmissionForm()" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition cursor-pointer">
+                            <i class="fa-solid fa-rotate-left mr-1"></i> নতুন আবেদন
+                        </button>
+                        <div class="flex gap-3">
+                            <button onclick="window.print()" class="px-6 py-2.5 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-sm shadow-md transition flex items-center gap-2 cursor-pointer">
+                                <i class="fa-solid fa-print"></i>
+                                <span>স্লিপ প্রিন্ট / PDF সেভ করুন</span>
+                            </button>
+                            <button onclick="closeAdmissionModal()" class="px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-dark text-white font-bold text-sm transition cursor-pointer">
+                                সম্পন্ন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        // 1. Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 2. Notice Board Data & Filtering
+        const noticesData = [
+            {
+                id: 1,
+                category: 'admission',
+                badge: 'ভর্তি বিজ্ঞপ্তি',
+                badgeColor: 'bg-emerald-100 text-emerald-800',
+                date: '১২ নভেম্বর ২০২৬',
+                title: '২০২৬-২০২৭ শিক্ষাবর্ষে ডিপ্লোমা ও বিএসসি নার্সিং কোর্সে ভর্তি বিজ্ঞপ্তি',
+                details: 'প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজ, টাঙ্গাইলে ২০২৬-২০২৭ শিক্ষাবর্ষে ৩ বছর মেয়াদী ডিপ্লোমা ইন নার্সিং সায়েন্স অ্যান্ড মিডওয়াইফারি, ডিপ্লোমা ইন মিডওয়াইফারি এবং ৪ বছর মেয়াদী বিএসসি ইন নার্সিং কোর্সে শিক্ষার্থী ভর্তি চলছে। আগ্রহী শিক্ষার্থীদের দ্রুত অনলাইনে অথবা সরাসরি কলেজ অফিসে এসে আবেদন সম্পন্ন করার জন্য অনুরোধ করা যাচ্ছে।'
+            },
+            {
+                id: 2,
+                category: 'exam',
+                badge: 'পরীক্ষা সংক্রান্ত',
+                badgeColor: 'bg-sky-100 text-sky-800',
+                date: '০৫ নভেম্বর ২০২৬',
+                title: '১ম ও ২য় বর্ষের অভ্যন্তরীণ মূল্যায়ন পরীক্ষার সময়সূচি প্রকাশ',
+                details: 'ডিপ্লোমা ইন নার্সিং সায়েন্স অ্যান্ড মিডওয়াইফারি ১ম ও ২য় বর্ষের শিক্ষার্থীদের জানানো যাচ্ছে যে, আগামী ২৫ নভেম্বর ২০২৬ তারিখ থেকে অভ্যন্তরীণ মূল্যায়ন পরীক্ষা শুরু হবে। সকল শিক্ষার্থীকে পরীক্ষার ফি ও বকেয়া বেতন পরিশোধ করে প্রবেশপত্র সংগ্রহ করার নির্দেশ দেওয়া হলো।'
+            },
+            {
+                id: 3,
+                category: 'result',
+                badge: 'ফলাফল',
+                badgeColor: 'bg-amber-100 text-amber-800',
+                date: '২৮ অক্টোবর ২০২৬',
+                title: 'বিএনএমসি চূড়ান্ত পরীক্ষার ফলাফল ও কৃতী শিক্ষার্থী সংবর্ধনা',
+                details: 'বাংলাদেশ নার্সিং ও মিডওয়াইফারি কাউন্সিল (BNMC) পরিচালিত চূড়ান্ত পরীক্ষায় প্রিন্সিপাল মিজানুর রহমান নার্সিং কলেজের শিক্ষার্থীরা ৯৮% পাসের হার অর্জন করেছে। কৃতী শিক্ষার্থীদের সংবর্ধনা অনুষ্ঠান আগামী সপ্তাহে কলেজ অডিটোরিয়ামে অনুষ্ঠিত হবে।'
+            },
+            {
+                id: 4,
+                category: 'admission',
+                badge: 'বৃত্তি তথ্য',
+                badgeColor: 'bg-purple-100 text-purple-800',
+                date: '২০ অক্টোবর ২০২৬',
+                title: 'মেধাবী ও দরিদ্র শিক্ষার্থীদের জন্য বিশেষ শিক্ষাবৃত্তির আবেদন আহ্বান',
+                details: 'এসএসসি ও এইচএসসি পরীক্ষায় জিপিএ ৫.০০ প্রাপ্ত মেধাবী শিক্ষার্থী এবং আর্থিকভাবে অসচ্ছল পরিবারের মেধাবী শিক্ষার্থীদের জন্য টিউশন ফি-তে বিশেষ ছাড় ও শিক্ষাবৃত্তি প্রদান করা হবে। ভর্তির সময় প্রয়োজনীয় কাগজপত্রসহ আবেদন করতে হবে।'
+            }
+        ];
+
+        const noticeListEl = document.getElementById('notice-list');
+        const filterBtns = document.querySelectorAll('.notice-filter-btn');
+
+        function renderNotices(filter = 'all') {
+            noticeListEl.innerHTML = '';
+            const filtered = filter === 'all' 
+                ? noticesData 
+                : noticesData.filter(n => n.category === filter);
+
+            filtered.forEach(notice => {
+                const item = document.createElement('div');
+                item.className = 'py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-white px-3 rounded-xl transition cursor-pointer group';
+                item.onclick = () => openNoticeModal(notice);
+                item.innerHTML = `
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-bold px-2.5 py-0.5 rounded-md ${notice.badgeColor}">${notice.badge}</span>
+                            <span class="text-xs text-slate-400"><i class="fa-regular fa-calendar mr-1"></i>${notice.date}</span>
+                        </div>
+                        <h4 class="font-bold text-slate-800 group-hover:text-primary transition text-sm sm:text-base">
+                            ${notice.title}
+                        </h4>
+                    </div>
+                    <button class="self-start sm:self-center shrink-0 text-xs font-semibold text-primary bg-primary/10 group-hover:bg-primary group-hover:text-white px-3.5 py-2 rounded-lg transition">
+                        বিস্তারিত <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </button>
+                `;
+                noticeListEl.appendChild(item);
+            });
+        }
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-white');
+                    b.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+                });
+                btn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+                btn.classList.add('bg-primary', 'text-white');
+                renderNotices(btn.getAttribute('data-filter'));
+            });
+        });
+
+        // Initial render
+        renderNotices('all');
+
+        // 3. Notice Details Modal Functions
+        const noticeModal = document.getElementById('notice-modal');
+        function openNoticeModal(notice) {
+            document.getElementById('modal-notice-badge').textContent = notice.badge;
+            document.getElementById('modal-notice-date').innerHTML = `<i class="fa-regular fa-calendar mr-1"></i>${notice.date}`;
+            document.getElementById('modal-notice-title').textContent = notice.title;
+            document.getElementById('modal-notice-body').textContent = notice.details;
+            noticeModal.classList.remove('hidden');
+        }
+
+        function closeNoticeModal() {
+            noticeModal.classList.add('hidden');
+        }
+
+        // 4. Online Admission Modal & Printable Slip Logic
+        const admissionModal = document.getElementById('admission-modal');
+        const formContainer = document.getElementById('admission-form-container');
+        const slipContainer = document.getElementById('admission-slip-container');
+        const admissionForm = document.getElementById('online-admission-form');
+        const formErrorMsg = document.getElementById('form-error-msg');
+
+        function openAdmissionModal(selectedCourse = '') {
+            if (selectedCourse) {
+                document.getElementById('app-course').value = selectedCourse;
+            }
+            admissionModal.classList.remove('hidden');
+        }
+
+        function closeAdmissionModal() {
+            admissionModal.classList.add('hidden');
+        }
+
+        function resetAdmissionForm() {
+            admissionForm.reset();
+            formErrorMsg.classList.add('hidden');
+            slipContainer.classList.add('hidden');
+            formContainer.classList.remove('hidden');
+        }
+
+        admissionForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            formErrorMsg.classList.add('hidden');
+
+            const name = document.getElementById('app-name').value.trim();
+            const course = document.getElementById('app-course').value;
+            const father = document.getElementById('app-father').value.trim();
+            const mother = document.getElementById('app-mother').value.trim();
+            const phone = document.getElementById('app-phone').value.trim();
+            const ssc = parseFloat(document.getElementById('app-ssc').value);
+            const hsc = parseFloat(document.getElementById('app-hsc').value);
+            const address = document.getElementById('app-address').value.trim();
+
+            // Basic Bengali Validation
+            if (phone.length < 11) {
+                formErrorMsg.textContent = 'অনুগ্রহ করে সঠিক ১১ সংখ্যার মোবাইল নম্বর প্রদান করুন।';
+                formErrorMsg.classList.remove('hidden');
+                return;
+            }
+
+            if (isNaN(ssc) || isNaN(hsc) || ssc < 2.0 || hsc < 2.0 || ssc > 5.0 || hsc > 5.0) {
+                formErrorMsg.textContent = 'অনুগ্রহ করে সঠিক এসএসসি ও এইচএসসি জিপিএ (২.০০ থেকে ৫.০০ এর মধ্যে) লিখুন।';
+                formErrorMsg.classList.remove('hidden');
+                return;
+            }
+
+            // Generate Random Application ID
+            const randomId = 'PMRNC-26-' + Math.floor(1000 + Math.random() * 9000);
+            const today = new Date().toLocaleDateString('bn-BD', { year: 'numeric', month: 'long', day: 'numeric' });
+
+            // Populate Slip Data
+            document.getElementById('slip-id').textContent = randomId;
+            document.getElementById('slip-date').textContent = today;
+            document.getElementById('slip-name').textContent = name;
+            document.getElementById('slip-course').textContent = course;
+            document.getElementById('slip-father').textContent = father;
+            document.getElementById('slip-mother').textContent = mother;
+            document.getElementById('slip-phone').textContent = phone;
+            document.getElementById('slip-gpa').textContent = `SSC: ${ssc.toFixed(2)} | HSC: ${hsc.toFixed(2)} (মোট: ${(ssc + hsc).toFixed(2)})`;
+            document.getElementById('slip-address').textContent = address;
+
+            // Switch to Printable Slip View
+            formContainer.classList.add('hidden');
+            slipContainer.classList.remove('hidden');
+        });
+
+        // 5. Gallery Tab Filtering
+        const galleryBtns = document.querySelectorAll('.gallery-tab-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        galleryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                galleryBtns.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-white');
+                    b.classList.add('bg-slate-100', 'text-slate-700');
+                });
+                btn.classList.remove('bg-slate-100', 'text-slate-700');
+                btn.classList.add('bg-primary', 'text-white');
+
+                const category = btn.getAttribute('data-gallery');
+                galleryItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // 6. Contact Form Submission Feedback
+        const contactForm = document.getElementById('contact-form');
+        const contactSuccess = document.getElementById('contact-success');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            contactSuccess.classList.remove('hidden');
+            contactForm.reset();
+            setTimeout(() => {
+                contactSuccess.classList.add('hidden');
+            }, 6000);
+        });
+
+        // Close modals on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target === noticeModal) closeNoticeModal();
+            if (e.target === admissionModal) closeAdmissionModal();
+        });
+    </script>
+</body>
+</html>
